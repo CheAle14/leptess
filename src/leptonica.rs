@@ -107,7 +107,7 @@ pub struct Box {
     pub raw: leptonica_plumbing::memory::RefCounted<leptonica_plumbing::Box>,
 }
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct BoxGeometry {
     pub x: i32,
     pub y: i32,
